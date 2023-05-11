@@ -1,0 +1,43 @@
+# Definizione delle variabili e dimensioni
+
+# Dipartimenti
+ID_Dipartimento (int)
+Nome (varchar(50))
+
+# Corsi di Laurea
+ID_CorsoLaurea (int)
+Nome (varchar(50))
+ID_Dipartimento (int)
+tipo(varchar(50))
+
+# Corsi
+ID_Corso (integer)
+Nome (varchar(50))
+ID_CorsoLaurea (int)
+
+# Insegnanti
+ID_Insegnante (int)
+Nome (varchar(50))
+Cognome (varchar(255))
+IS_Corso (int)
+
+# Appelli
+ID_Appello
+ID_Esame (int)
+
+# Studenti
+ID_Studente (int)
+ID_CorsoLaurea (int)
+Nome (varchar(50))
+Cognome (varchar(50))
+Matricola (varchar (20))
+
+# Esami
+ID_Esame (int)
+ID_Corso (int)
+
+#voti
+ID_Voto
+ID_Studente
+ID_appello
+Voto (TINYINT UNSIGNED)
